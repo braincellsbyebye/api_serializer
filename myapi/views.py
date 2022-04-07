@@ -5,6 +5,6 @@ from . serializers import vhcseriliazer
 from . models import vehicles
 
 class vehicleviewset(viewsets.ModelViewSet):
-    query = vehicles.objects.all().order_by('name')
+    queryset = vehicles.objects.all().order_by('name')
     serializer_class = vhcseriliazer
 # Create your views here.
